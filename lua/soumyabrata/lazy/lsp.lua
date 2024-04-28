@@ -34,6 +34,7 @@ return {
                 "html",
                 "jsonls",
                 "prismals",
+                "tailwindcss",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
