@@ -35,6 +35,7 @@ return {
                 "jsonls",
                 "prismals",
                 "tailwindcss",
+                "yamlls"
             },
             handlers = {
                 function(server_name) -- default handler (optional)
