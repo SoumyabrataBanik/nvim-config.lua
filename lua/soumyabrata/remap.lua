@@ -11,3 +11,6 @@ vim.keymap.set("n", "<leader>p", '"+p')
 -- Nvim Tree
 vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<leader>b", vim.cmd.NvimTreeFocus)
+
+-- Bufferline
+vim.keymap.set("n", "<leader>x", vim.cmd.bdelete)
