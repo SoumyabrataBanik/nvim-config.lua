@@ -21,6 +21,7 @@ return {
             {},
             vim.lsp.protocol.make_client_capabilities(),
             cmp_lsp.default_capabilities())
+        local on_attach = require("lspconfig").on_attach
 
         require("fidget").setup({})
         require("mason").setup()
@@ -35,7 +36,12 @@ return {
                 "jsonls",
                 "prismals",
                 "tailwindcss",
-                "yamlls"
+                "yamlls",
+                "gopls",
+                "goimports",
+                "golangci_lint_ls",
+                "gomodifytags",
+                "golines",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -59,6 +65,17 @@ return {
                         }
                     }
                 end,
+
+                ["clangd"] = function ()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.clangd.setup {
+                        on_attach = function (client, bufnr)
+                            client.server_capabilities.signatureHelpProvider = false,
+                            on_attach(client, bufnr)                            
+                        end,
+                        capabilities = capabilities,
+                    }
+                end
             }
         })
 
