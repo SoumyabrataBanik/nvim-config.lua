@@ -39,7 +39,6 @@ return {
                 "yamlls",
                 "gopls",
                 "goimports",
-                "golangci_lint_ls",
                 "gomodifytags",
                 "golines",
             },

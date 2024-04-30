@@ -8,6 +8,7 @@ vim.keymap.set("n", "<leader>q", vim.cmd.q)
 vim.keymap.set("n", "<leader>wq", vim.cmd.wq)
 
 vim.keymap.set("n", "<leader>p", '"+p')
+vim.keymap.set("n", "<C-[>", "<Esc>")
 
 -- Nvim Tree
 vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
