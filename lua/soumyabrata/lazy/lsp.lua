@@ -29,6 +29,7 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "eslint",
+                "rust_analyzer",
                 "tsserver",
                 "cssls",
                 "clangd",
@@ -38,9 +39,6 @@ return {
                 "tailwindcss",
                 "yamlls",
                 "gopls",
-                "goimports",
-                "gomodifytags",
-                "golines",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
