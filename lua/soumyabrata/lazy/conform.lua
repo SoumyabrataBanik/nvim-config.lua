@@ -13,7 +13,7 @@ return {
 				rust = { "rustfmt" },
 				javascriptreact = { { "prettierd", "prettier" } },
 				typescriptreact = { { "prettierd", "prettier" } },
-				svelte = { "prettier" },
+				svelte = { { "prettierd", "prettier" } },
 				css = { { "prettierd", "prettier" } },
 				html = { { "prettierd", "prettier" } },
 				json = { { "prettierd", "prettier" } },
