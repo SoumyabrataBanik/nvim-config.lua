@@ -38,6 +38,10 @@ return {
                 "prismals",
                 "tailwindcss",
                 "yamlls",
+                "pyright",
+                "pylsp",
+                "pylint",
+                "pylyzer",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
