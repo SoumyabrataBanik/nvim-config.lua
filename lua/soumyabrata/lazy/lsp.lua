@@ -40,7 +40,6 @@ return {
                 "yamlls",
                 "pyright",
                 "pylsp",
-                "pylint",
                 "pylyzer",
             },
             handlers = {
