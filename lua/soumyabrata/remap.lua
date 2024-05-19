@@ -11,8 +11,11 @@ vim.keymap.set("n", "<leader>p", '"+p')
 vim.keymap.set("n", "<C-[>", "<Esc>")
 
 -- Nvim Tree
-vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
-vim.keymap.set("n", "<leader>b", vim.cmd.NvimTreeFocus)
+--vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
+--vim.keymap.set("n", "<leader>b", vim.cmd.NvimTreeFocus)
+
+-- Oil.Nvim
+vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open Parent directory" })
 
 -- Bufferline
 vim.keymap.set("n", "<C-x>", vim.cmd.BufferClose)
