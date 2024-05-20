@@ -28,6 +28,7 @@ return {
 					"pylsp",
 					"pylyzer",
 					"jdtls",
+					"bashls",
 				},
 			})
 		end,
@@ -44,6 +45,7 @@ return {
 					"stylua",
 					"java-debug-adapter",
 					"java-test",
+					"bash-debug-adapter",
 				},
 			})
 		end,
