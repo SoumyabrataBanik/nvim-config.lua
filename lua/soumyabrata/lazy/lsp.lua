@@ -41,6 +41,7 @@ return {
                 "pyright",
                 "pylsp",
                 "pylyzer",
+                "jdtls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
